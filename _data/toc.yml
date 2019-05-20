@@ -51,6 +51,6 @@
   - title: Markdown files
     url: /features/markdown
     not_numbered: true
-  - title: Jupyter notebooks
-    url: /features/notebooks
+  - title: Gaussian Quadrature
+    url: /features/gaussian_quadrature
     not_numbered: true
