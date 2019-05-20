@@ -4,8 +4,8 @@ prev_page:
   url: /features/features
   title: 'Features and customization'
 next_page:
-  url: /features/notebooks
-  title: 'Jupyter notebooks'
+  url: /features/gaussian_quadrature
+  title: 'Gaussian Quadrature'
 comment: "***PROGRAMMATICALLY GENERATED, DO NOT EDIT. SEE ORIGINAL FILES IN /content***"
 ---
 # Creating book content
