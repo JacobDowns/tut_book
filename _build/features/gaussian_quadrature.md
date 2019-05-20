@@ -100,7 +100,7 @@ plt.show()
 There is a clear drawback of the Gauss-Hermite quadrature rule. The number of sigma points grows exponentially with the state dimension! Hence, while the Gauss-Hermite rule is a useful for low dimensional problems, it is intractable for larger problems. 
 
 ## The Unscented Transform as a Quadrature Rule
-The unscented transform, introduced in \cite{Julier1997}, is a highly efficient quadrature rule of degree $d=3$. There are several formulations of the unscented transform, but we'll look at a common version that uses set of $2n + 1$ sigma points. Here, the notation $\pmb{e_i}$ refers to the $i$-th column of the $n \times n$ identity matrix. Points are given by
+The unscented transform, introduced in {% cite VanderMerwe2004 %}, is a highly efficient quadrature rule of degree $d=3$. There are several formulations of the unscented transform, but we'll look at a common version that uses set of $2n + 1$ sigma points. Here, the notation $\pmb{e_i}$ refers to the $i$-th column of the $n \times n$ identity matrix. Points are given by
 \begin{equation}
 \pmb{\chi_i} =
 \begin{cases} 
@@ -195,3 +195,5 @@ In this case, both the Gauss-Hermite method and the UT exactly (to machine preci
 What about higher order polynomials or non-polynomial functions? A drawback of using a fixed number of sigma points versus taking random samples via MCMC methods is that the order of accuracy is necessarily fixed. For some nonlinear functions, the unscented approximation will be highly accurate (or even perfect), but for others, higher order polynomial terms in the Taylor series expansion for $f$ will result in integration errors. In contrast, MCMC methods can compute expectation integrals to arbitrary precision given enough samples. 
 
 Generally, the unscented transform provides more accurate estimates relative to the number of required sigma points. Different quadrature rules and different selections of the scaling parameters for those rules will affect their performance for a given problem. TUT includes algorithms for generating sigma points for several Gaussian quadrature rules with different numbers of sigma points and degrees of accuracy. 
+
+{% bibliography --cited %}
