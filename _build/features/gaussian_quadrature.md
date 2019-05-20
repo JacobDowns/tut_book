@@ -33,13 +33,13 @@ with quadrature points $\pmb{\chi_i}$, also called sigma points, and associated 
 ## Classifying Accuracy
 
 The order of accuracy of a Gaussian quadrature rule is usually classified in terms of the degrees of polynomial functions that it can integrate exactly. For multivariate functions we need a few definitions. 
-\begin{definition}[Monomial  Function]
+
 A monomial of degree $d$ refers to a function 
 \begin{equation}
 x_1^{N_1} x_2^{N_2} \cdots x_n^{N_n}
 \end{equation}
 where the $N_i$ are non-negative integers that sum to $d$.
-\end{definition}
+
 A multivariate polynomial of degree $d$ is simply a weighted sum of monomial functions with highest degree $d$ A Gaussian quadrature is said to be $d$-th order if it can exactly integrate expectation integrals for polynomial functions $f(\pmb{x})$ up to and including degree $d$. 
 
 ## Gauss-Hermite Quadrature
